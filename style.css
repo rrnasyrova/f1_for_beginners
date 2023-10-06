@@ -161,6 +161,7 @@ button {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 200px;
 }
 
 .main__slider .slider button{
