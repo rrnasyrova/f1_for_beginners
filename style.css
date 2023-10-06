@@ -99,7 +99,6 @@ nav ul {
     background: white;
 } 
 
-
 .main__slider .slider {
     height: 100%;
     white-space: nowrap;
@@ -116,12 +115,13 @@ nav ul {
     color: white;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    max-width: 800px;
-    position:relative;
-    margin-left: 310px;
-    margin-top: 230px;
 }
-
+.main__slider > .slider > .h1 > .button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .main__slider{
     color: #fff;  
     text-align: center;
@@ -132,14 +132,6 @@ nav ul {
     margin: 0 3px;
     color: rgba(0,0,0,0.8);
     text-decoration: none;
-}
-
-.main__slider .slider h2 {
-    margin-top: 40vh;
-    font-weight: 200;
-    letter-spacing: -0.06em;
-    word-spacing: 0.2em;
-    font-size: 3em;
 }
 
 .main__slider .slider > * {
@@ -169,12 +161,9 @@ button {
 
 .main__slider .slider button{
     font-size: 18px;
+    margin: auto;
     padding: 20px 25px;
     border-radius: 20px;
-    position: relative;
-    margin-top: 0px;
-    margin-left: 241px;
-    transform: translate(-50%, 0);
 }
 
 .main__slider .prevNext {
@@ -428,8 +417,8 @@ button {
 .leaders-section {
     display: flex;
     justify-content: space-around;
-}
-  
+    }
+
 .leader {
     display: flex;
     flex-direction: column;
