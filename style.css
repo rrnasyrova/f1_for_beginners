@@ -94,8 +94,11 @@ nav ul {
     position: relative;
     overflow: hidden;
     height: 500px;
+    max-height: 90%;
+    min-height: 400px;
     background: white;
 } 
+
 
 .main__slider .slider {
     height: 100%;
