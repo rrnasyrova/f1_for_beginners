@@ -94,37 +94,34 @@ nav ul {
     position: relative;
     overflow: hidden;
     height: 500px;
-    max-height: 90%;
-    min-height: 400px;
     background: white;
 } 
+
+.main__slider{
+    color: #fff;  
+    text-align: center;
+}
 
 .main__slider .slider {
     height: 100%;
     white-space: nowrap;
     font-size: 0;
-    align-items: center;
     transition: 0.8s;
     margin-left: auto;
     margin-right: auto;
 }
 
 .main__slider .slider h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-size: 45px;
     line-height: 50px;
     color: white;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-}
-.main__slider > .slider > .h1 > .button {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.main__slider{
-    color: #fff;  
-    text-align: center;
+    width: 800px;
 }
 
 .main__slider a {
@@ -159,9 +156,17 @@ button {
     padding: 10px;
 }
 
+.position_center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main__slider .slider button{
     font-size: 18px;
     margin: auto;
+    position: center;
     padding: 20px 25px;
     border-radius: 20px;
 }
