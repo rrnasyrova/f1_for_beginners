@@ -372,7 +372,7 @@ button {
 .schedule{
     background: white;
     display: flexbox;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -385,14 +385,13 @@ button {
 }
 
 .content-table {
+    margin: auto;
     border-collapse: collapse;
     font-size: 0.9em;
     min-width: 600px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
-    position: relative;
-    margin-left: 400px;
 }
 
 .content-table thead tr {
