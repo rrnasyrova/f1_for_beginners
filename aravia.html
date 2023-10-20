@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Формула-1 для новичков</title>
+  <link rel="stylesheet" type="text/css" href="tracks_about.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+          <img src="img/logo2.jpeg" alt="Формула-1 для новичков">
+        </div>
+        <nav>
+          <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+            <li><a href="drivers.html">Пилоты</a></li>
+            <li><a href="">Команды</a></li>
+            <li><a href="results.html" class="active">Результаты</a>
+              <ul class="submenu">
+                <li><a href="race_results.html">Результаты заездов</a></li>
+                <li><a href="" class="submenu-link">Чемпионаты</a>
+                  <ul class="submenu">
+                    <li><a href="">Личный зачёт</a></li>
+                    <li><a href="">Кубок конструкторов</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="">История</a></li>
+            <li><a href="tracks.html">Трассы</a></li>
+            <li><a href="">Словарь</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Трасса Формулы 1 в Саудовской Аравии</h1>
+        
+        <div class="slideshow-container">
+            <div class="slide" style="background-image: url(img/aravia1.jpg); display: block;"></div>
+            <div class="slide" style="background-image: url(img/aravia2.jpeg);"></div>
+            <div class="slide" style="background-image: url(img/aravia3.jpeg);"></div>
+        </div>
+        <table>
+            <tr>
+                <th>Длина трассы</th>
+                <td>308.45 км</td>
+            </tr>
+            <tr>
+                <th>Кругов в гонке</th>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>Первый Гран-при</th>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <th>Быстрейший круг</th>
+                <td>1:31.906 МАКС ФЕРСТАППЕН (2023)</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var slides = document.querySelectorAll('.slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 2000);
+        
+        function nextSlide() {
+            slides[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.display = 'block';
+        }
+    </script>
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href=""><i class="fa fa-paper-plane"></i></a>
+        <a href=""><i class="fa fa-phone-square"></i></a>
+      </div>
+      <div class="row">
+        <ul>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Обратная связь</a></li>
+          <li><a href="">Поддержка</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        Designed By: Regina Nasyrova
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

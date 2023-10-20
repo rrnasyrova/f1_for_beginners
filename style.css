@@ -6,8 +6,12 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background: #ffffff;
-    text-align: center ;
+    text-align: center;
+    width: 100%;
 }
 
 header a {
@@ -21,73 +25,80 @@ header a {
     height: 80px;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic);
+
 nav {
-    display: table;
-    margin: 0 auto;
+  background: white;
+  box-shadow: 0 2px 0 0 #ECF1F2;
+  border-top: 1px solid #ECF1F2;
+  text-align: center;
 }
-
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+}
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-.topmenu:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .topmenu > li {
-    width: 16%;
-    float: left;
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  position: relative;
+  margin-right: -4px;
+  border-left: 1px solid #ECF1F2;
 }
+.topmenu > li:last-child {border-right: 1px solid #ECF1F2;}
 
 .topmenu > li > a {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-    padding: 15px 30px;
+  font-weight: bold;
+  padding: 20px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1c1c1c;
 }
-
-.topmenu li a:hover { 
-    color: #D5B45B; 
+.active:after, .submenu-link:after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
 }
-
-.submenu-link:after {
-    content: "\f107";
-    font-family: "FontAwesome";
-    color: inherit;
-    margin-left: 10px;
-}
-
+.topmenu .active, .topmenu > li > a:hover, .submenu li a:hover {color: #1c1c1c;}
 .submenu {
-    background: #616161;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    z-index: 5;
-    width: 180px;
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: 0 0;
-    transition: .5s ease-in-out;
+  position: absolute;
+  left: -1px;
+  z-index: 5;
+  width: 240px;
+  border-bottom: 1px solid #ECF1F2;
+  visibility: hidden;
+  opacity: 0;  
+  transform: translateY(10px);
+  transition: .3s ease-in-out;
 }
-
+.submenu li {position: relative;}
 .submenu a {
-    color: white;
-    text-align: left;
-    padding: 12px 15px;
-    font-size: 13px;
-    border-bottom: 1px solid rgba(255,255,255,.1);
+  background: white;
+  border-top: 1px solid #ECF1F2;
+  border-right: 1px solid #ECF1F2;
+  border-left: 1px solid #ECF1F2;
+  color: #1c1c1c;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
 }
-
-.topmenu > li:hover .submenu {
-    opacity: 1;
-    transform: scaleY(1);
+.submenu .submenu {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 1px);
+  left: -webkit-calc(100% - 1px);
+}
+nav li:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .main__slider {

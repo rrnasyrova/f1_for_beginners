@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Формула-1 для новичков</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="schedule.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,10 +16,10 @@
             <li><a href="schedule.html">Расписание</a></li>
             <li><a href="drivers.html">Пилоты</a></li>
             <li><a href="">Команды</a></li>
-            <li><a href="" class="active">Результаты</a>
+            <li><a href="results.html" class="active">Результаты</a>
               <ul class="submenu">
                 <li><a href="race_results.html">Результаты заездов</a></li>
-                <li><a href="results.html" class="submenu-link">Чемпионаты</a>
+                <li><a href="" class="submenu-link">Чемпионаты</a>
                   <ul class="submenu">
                     <li><a href="">Личный зачёт</a></li>
                     <li><a href="">Кубок конструкторов</a></li>
@@ -33,53 +33,15 @@
           </ul>
         </nav>
     </header>
-    <section class="main">
-      <div class="main__slider">
-        <s id="s1"></s> 
-        <s id="s2"></s>
-        <s id="s3"></s>
-        <s id="s4"></s>
-        <div class="slider">
-          <div style="background: url('img/background1.jpg') no-repeat; background-size: cover;">
-            <div class="position_center">
-              <h1>Хотите погрузиться в Формулу-1 и разбираться в терминах?</h1>
-              <button>УЗНАТЬ ПОДРОБНЕЕ</button>
-            </div>
-          </div>
-          <div style="background: url('img/background2.jpg') no-repeat; background-size: cover;">
-            <div class="position_center">
-              <h1>Хотите подробнее узнать о командах Формулы-1?</h1>
-              <button>УЗНАТЬ ПОДРОБНЕЕ</button>
-            </div>
-          </div>
-          <div style="background: url('img/background3.jpg') no-repeat; background-size: cover;">
-            <div class="position_center">
-              <h1>Хочется узнать об истории Формулы-1?</h1>
-              <button>УЗНАТЬ ПОДРОБНЕЕ</button>
-            </div>
-          </div>
-          <div style="background: url('img/background4.jpg') no-repeat; background-size: cover;">
-            <div class="position_center">
-              <h1>Хочется узнать об карьере пилотов Формулы-1 подробнее?</h1>
-              <button>УЗНАТЬ ПОДРОБНЕЕ</button>
-            </div>
-          </div>
-        </div>
-        <div class="prevNext">
-          <div><a href="#s4"></a><a href="#s2"></a></div>
-          <div><a href="#s1"></a><a href="#s3"></a></div>
-          <div><a href="#s2"></a><a href="#s4"></a></div>
-          <div><a href="#s3"></a><a href="#s1"></a></div>
-        </div>
-        <div class="bullets">
-          <a href="#s1">1</a>
-          <a href="#s2">2</a>
-          <a href="#s3">3</a>
-          <a href="#s4">4</a>
-        </div>
-      </div>
+    <section class="about_schedule">
+        <div class="about__schedule">
+            <h1>Формула-1 в сезоне 2023</h1>
+         </div>
     </section>
     <section class="schedule">
+      <div class="half-circle">
+        <p><b>Сезон 2023 года</b> — сезон Формулы-1, в рамках которого проводится <b>74-й чемпионат мира по автогонкам</b> в классе «Формула-1». Международной автомобильной федерацией (FIA, руководящим органом международного автоспорта) он признан высшим классом соревнований для гоночных автомобилей с открытыми колесами. Чемпионат разыгрывается в серии гонок, или Гран-при, проводимых по всему миру. Гонщики и команды борются за титулы чемпиона мира среди гонщиков («личный зачёт») и чемпиона мира среди конструкторов («кубок конструкторов»), соответственно.</p>
+      </div> 
       <h2>Расписание этапов</h2>
       <table class="content-table">
         <thead>
@@ -226,79 +188,6 @@
         </tbody>
       </table>
     </section>
-    <section class="race__section">
-      <h2>Предстоящая гонка</h2>
-      <div class="race__details">
-        <img src="img/trassa.jpeg" alt="TracK Image">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Характеристика</th>
-              <th> </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>ОФИЦИАЛЬНОЕ НАЗВАНИЕ ТРАССЫ</td>
-              <td>Circuit of the Americas</td>
-            </tr>
-            <tr>
-              <td>РАСПОЛОЖЕНИЕ</td>
-              <td>США, Остин</td>
-            </tr>
-            <tr>
-              <td>ВРЕМЯ</td>
-              <td>22 октября 22:00 МСК</td>
-            </tr>
-            <tr>
-              <td>КРУГОВ</td>
-              <td>56</td>
-            </tr>
-            <tr>
-              <td>ДЛИНА ТРАССЫ, КМ</td>
-              <td>5.53</td>
-            </tr>
-            <tr>
-              <td>ДИСТАНЦИЯ, КМ</td>
-              <td>309</td>
-            </tr>
-            <tr>
-              <td>ПЕРВЫЙ ГРАН-ПРИ</td>
-              <td>1956</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>  
-    </section>
-    <section class="leaders">
-      <h2>Лидеры зачётного рейтинга</h2>
-      <div class="leaders-section">
-        <div class="leader">
-          <div class="image-wrapper">
-            <img src="img/vers.png" alt="Leader 1">
-            <div class="caption">
-              <span>Макс Ферстаппен</span>
-            </div>
-          </div>
-        </div>
-        <div class="leader">
-          <div class="image-wrapper">
-            <img src="img/perez.jpeg" alt="Leader 2">
-            <div class="caption">
-              <span>Серхио Перес</span>
-            </div>
-          </div>
-        </div>
-        <div class="leader">
-          <div class="image-wrapper">
-            <img src="img/hamilton.png" alt="Leader 3">
-            <div class="caption">
-              <span>Льюис Хэмилтон</span>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
   <footer>
     <div class="footer">
       <div class="row">
