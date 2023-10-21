@@ -19,6 +19,10 @@ header {
     width: 100%;
 }
 
+.navbar-expand-lg{
+  padding-left: 6%;
+}
+
 header a {
     text-decoration: none;
     outline: none;
@@ -509,4 +513,55 @@ a[disabled]{
 
 .carousel-control-prev {
   color: whitesmoke;
+}
+
+.history{
+  display: grid;
+}
+
+/*.background_history { 
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  background-image: url(foto-teams/history/background.jpg); 
+  background-size: 100%; 
+  background-repeat: repeat-y; 
+  filter: blur(5px) brightness(60%) opacity(90%); 
+  z-index: -1; 
+
+} */
+
+.history .name_page {
+  text-align: center;
+  background-image:url(history/background.jpeg); 
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.container-history {
+  display: grid;
+  width: 88%;
+  padding-left: 12%;
+  text-align:justify;
+}
+
+.container-history .divide {
+  padding-top: 0.7em;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0.7em;
+  padding-left: 5%;
+  list-style: none;
+}
+
+.foto-history{
+  text-align: center;
+}
+
+.history .container-history img{
+  width: 70%;
+  border-radius: 10px; 
+  overflow: hidden;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }

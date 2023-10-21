@@ -15,6 +15,10 @@ header {
     width: 100%;
 }
 
+.navbar-expand-lg{
+    padding-left: 6%;
+  }
+
 header a {
     text-decoration: none;
     outline: none;
@@ -385,6 +389,7 @@ button {
 }
 
 .schedule h2 {
+    padding: 30px;
     font-size: 35px;
     text-align: center;
     line-height: 50px;
@@ -496,6 +501,7 @@ button {
 }
     
 .footer .row{
+    display: inline-block;
     width:100%;
     margin:1% 0%;
     padding:0.6% 0%;
