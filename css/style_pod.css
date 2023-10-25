@@ -23,6 +23,7 @@ header {
   padding-left: 7.5%;
 }
 
+
 header a {
     text-decoration: none;
     outline: none;
@@ -89,7 +90,7 @@ nav ul {
 }
 .submenu li {position: relative;}
 .submenu a {
-  background: white;
+  background: #e8e8e8;         /*------------------------------*/
   border-top: 1px solid #ECF1F2;
   border-right: 1px solid #ECF1F2;
   border-left: 1px solid #ECF1F2;
@@ -123,11 +124,17 @@ textarea {
   text-decoration: none;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+}
+
 .background_dictionaty { 
   position: absolute; 
   width: 100%;
   height: 100%;
-  background-image: url('../img/background_dictionary.jpg'); 
+  background-image: url(../img/background_dictionary.jpg); 
   background-size: 100%; 
   background-repeat: repeat-y; 
   filter: blur(5px) brightness(60%) opacity(90%); 
@@ -135,8 +142,8 @@ textarea {
 
 } 
 
-.p1 { 
-  height: 130%;
+.p1 {  /*------------------*/
+  height: 175%;
 } 
 
 .p2 { 
@@ -227,55 +234,58 @@ textarea {
   padding:30px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
+  margin-top: 3em;
+  bottom: 0;
+  width: 100%;
 }
-  
+    
 .footer .row{
-  display: inline-block;
-  width:100%;
-  margin:1% 0%;
-  padding:0.6% 0%;
-  color:gray;
-  font-size: 12px;
+   display: inline-block; /*-------------------------------------------------------------------------*/
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size: 12px;
 }
-  
+    
 .footer .row a{
-  text-decoration:none;
-  color:gray;
-  transition:0.5s;
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
 }
-  
+    
 .footer .row a:hover{
-  color:#fff;
+    color:#fff;
 }
-  
+    
 .footer .row ul{
-  width:100%;
+    width:100%;
 }
-  
+    
 .footer .row ul li{
-  display:inline-block;
-  margin:0px 30px;
+    display:inline-block;
+    margin:0px 30px;
 }
-  
+    
 .footer .row a i{
-  font-size: 22px;
-  margin:0% 1%;
+    font-size: 22px;
+    margin:0% 1%;
 }
-  
+    
 @media (max-width:720px){
-  .footer{
-      text-align:left;
-      padding:5%;
-  }
+    .footer{
+        text-align:left;
+        padding:5%;
+    }
 
-  .footer .row ul li{
-       display:block;
-      margin:10px 0px;
-      text-align:left;
-  }
-  .footer .row a i{
-      margin:0% 3%;
-  }
+    .footer .row ul li{
+         display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    .footer .row a i{
+        margin:0% 3%;
+    }
 }
 
 
@@ -289,6 +299,12 @@ textarea {
   width: 100%;
   color: whitesmoke;
 }
+
+.head_dict_word{
+  display: inline-block;
+}
+
+
 
 .content_dictionary .name_page{
     margin-left: 25%;
@@ -312,6 +328,22 @@ textarea {
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 0.5em;
+}
+
+.container_word a{
+    text-decoration:none;
+    color: #d4d2d2 ;
+    transition:0.3s;
+
+}
+
+.container_word a:hover{
+    color:#fff;
+}
+
+.container_word a i{
+    font-size: 22px;
+    margin-top: 1%;
 }
 
 .container_word-with-foto{
@@ -476,6 +508,25 @@ a[disabled]{
   height: 14em;
 }
 
+@media only screen and (max-width: 1000px)  {   /*----------------------------------------*/
+  .team_pilots_buttons {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns:  6.5em 6.5em 6.5em 1fr 1fr;
+    grid-column-gap: 11%;
+    grid-row-gap: 1em;
+    padding-left: 5%;
+  }
+}
+
+/*.btn-content{
+  display: grid;
+}
+
+.btn-content img{
+  width: 100%;
+}*/
+
 .span1{
   font-weight: bold;
 }
@@ -488,6 +539,10 @@ a[disabled]{
   width: 50%;
   border-radius: 10px; 
   overflow: hidden;
+}
+
+.team_history{   /*-----------------------*/
+  text-align: justify;
 }
 
 .team_fotos{
@@ -515,6 +570,9 @@ a[disabled]{
   color: whitesmoke;
 }
 
+
+/*-------------------------------------------------*/
+
 .history{
   display: grid;
 }
@@ -523,7 +581,7 @@ a[disabled]{
   position: absolute; 
   width: 100%;
   height: 100%;
-  background-image: url(foto-teams/history/background.jpg); 
+  background-image: url(../img/history/background.jpg); 
   background-size: 100%; 
   background-repeat: repeat-y; 
   filter: blur(5px) brightness(60%) opacity(90%); 
@@ -533,7 +591,7 @@ a[disabled]{
 
 .history .name_page {
   text-align: center;
-  background-image:url('../img/history/background.jpeg'); 
+  background-image:url(../img/history/background.jpg); 
   padding-top: 1em;
   padding-bottom: 3em;
 }
@@ -542,7 +600,7 @@ a[disabled]{
   display: grid;
   width: 88%;
   padding-left: 12%;
-  text-align:justify;
+  text-align: justify;
 }
 
 .container-history .divide {
@@ -550,9 +608,9 @@ a[disabled]{
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 0.7em;
-  padding-left: 5%;
   list-style: none;
 }
+
 
 .foto-history{
   text-align: center;
@@ -564,4 +622,8 @@ a[disabled]{
   overflow: hidden;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.navbar-toggler{
+
 }
